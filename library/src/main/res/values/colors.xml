@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="library_ColorPrimary">#3F51B5</color>
+    <color name="library_ColorPrimaryDark">#303F9F</color>
+    <color name="library_ColorAccent">#FF4081</color>
+
+    <color name="library_main_color">#009ded</color>
+    <color name="library_white">#ffffff</color>
+    <color name="library_line_divider">#aaaaaa</color>
+    <color name="library_line_space">#eeeeee</color>
+    <color name="library_page_bg">#F7F7F7</color>
+    <color name="library_main_page_grid_title_bg">#E9E9E9</color>
+    <color name="library_personnel_with">#ff0000</color>
+    <color name="library_personnel_without">#00ff00</color>
+
+
+    <!-- 从底部弹出 -->
+    <color name="library_actionsheet_gray">#8F8F8F</color>
+    <color name="library_actionsheet_blue">#037BFF</color>
+
+    <!-- 从中间弹出的提示框 -->
+    <color name="library_black">#000000</color>
+    <color name="library_alertdialog_line">#c6c6c6</color>
+    <color name="library_colorDriverTitle">#006706</color>
+    <color name="library_colorReload">#BBD979</color>
+    <color name="library_hint_bg">#dddddd</color>
+    <color name="library_red">#ff0000</color>
+
+    <!--//微信-->
+    <color name="library_bar_color">#232325</color>
+    <color name="library_windows_color">#F5F5F5</color>
+    <color name="library_greeny">#ff11aca6</color>
+    <color name="library_black2">#ffeeeeee</color>
+    <!--lqc微信-->
+
+    <color name="library_select_down">#ededed</color>
+
+    <color name="library_gray0">#464646</color>
+    <color name="library_gray1">#7e7e7e</color>
+    <color name="library_gray2">#969696</color>
+    <color name="library_gray3">#c8969696</color>
+    <color name="library_gray4">#F5F5F5</color>
+    <color name="library_gray5">#EBEBEB</color>
+    <color name="library_gray6">#FBFBFB</color>
+    <color name="library_gray7">#999999</color>
+    <color name="library_gray8">#D9D9D9</color>
+    <color name="library_gray9">#DBDFE0</color>
+
+    <color name="library_red0">#ff0000</color>
+    <color name="library_red1">#D84E43</color>
+    <color name="library_red2">#F08B88</color>
+    <color name="library_red3">#FFFAF5</color>
+    <color name="library_red4">#823026</color>
+    <color name="library_red5">#FA6F5F</color>
+    <color name="library_red6">#D54A47</color>
+    <color name="library_red7">#E64340</color>
+
+    <color name="library_green0">#45C01A</color>
+    <color name="library_green1">#45C01A</color>
+    <color name="library_green2">#A3DEA3</color>
+    <color name="library_green3">#1AAD19</color>
+
+    <color name="library_blue0">#576B95</color>
+
+    <color name="library_black0">#000000</color>
+    <color name="library_black1">#99000000</color>
+
+    <color name="library_yellow0">#FFC51B</color>
+    <color name="library_yellow1">#E5A134</color>
+    <color name="library_line">#D2D2D2</color>
+    <color name="library_line2">#1896E5</color>
+    <!--快速索引bar颜色-->
+    <color name="library_side_bar">#919091</color>
+    <color name="library_side_bar_pressed">#BFBFBF</color>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eqdd.login">
+
+    <application >
+        <activity android:name=".ui.GuideActivity" />
+        <activity android:name=".ui.SplashActivity" />
+        <activity android:name=".ui.LoginActivity"/>
+        <activity android:name=".ui.EmailCheckActivity"/>
+        <activity android:name=".ui.EmailPasswordGetActivity"/>
+        <activity android:name=".ui.PhonePasswordGetActivity"/>
+        <activity android:name=".ui.RegistActivity"/>
+        <activity android:name=".ui.RegistTwo"/>
+        <receiver
+            android:name=".receiver.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.eqdd.yiqidian" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_click_support" type="id" />
+
+    <item name="BaseQuickAdapter_viewholder_support" type="id"/>
+    <item name="BaseQuickAdapter_swiping_support" type="id"/>
+    <item name="BaseQuickAdapter_dragging_support" type="id"/>
+    <item name="BaseQuickAdapter_databinding_support" type="id"/>
+
+
+
+
+
+    //activity title
+    <item name="back" type="id"/>
+    <item name="tv_title" type="id"/>
+    <item name="rl_title" type="id"/>
+    <item name="tv_right" type="id"/>
+</resources>

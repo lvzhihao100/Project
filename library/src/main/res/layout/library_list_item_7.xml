@@ -1,0 +1,75 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class=".ListItem7Custom">
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        android:translationZ="1dp">
+
+        <ImageView
+            android:id="@+id/iv_top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:layout_height="@{20}"
+            android:background="@color/library_line_space"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/ll_staff_records"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:layout_height="@{80}"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@{40}">
+
+            <ImageView
+                android:id="@+id/iv_enter"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:layout_width="@{28}"
+                app:layout_height="@{28}"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@{30}"
+                android:src="@mipmap/library_arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_enter"
+                android:gravity="center_vertical|left"
+                android:text="员工档案"
+                android:textSize="@{30}" />
+
+
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignLeft="@id/tv_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/library_line_space" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_height="@{30}"
+            android:background="@color/library_line_space"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</layout>

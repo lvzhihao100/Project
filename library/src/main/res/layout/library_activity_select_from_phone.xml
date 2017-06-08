@@ -1,0 +1,55 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.select.SelectFromPhoneActivity">
+
+    <data class=".SelectFromPhoneActivityCustom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_ColorPrimary"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_title"
+            layout="@layout/library_activity_title" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_white">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@{40}"
+                android:layout_marginTop="60dp"></android.support.v7.widget.RecyclerView>
+
+            <com.eqdd.wavesidebarlibrary.WaveSideBarView
+                android:id="@+id/waveSideBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp" />
+
+            <com.arlib.floatingsearchview.FloatingSearchView
+                android:id="@+id/floating_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:floatingSearch_close_search_on_keyboard_dismiss="true"
+                app:floatingSearch_leftActionMode="showSearch"
+                app:floatingSearch_menu="@menu/library_menu_search_view"
+                app:floatingSearch_searchBarMarginLeft="5dp"
+                app:floatingSearch_searchBarMarginRight="5dp"
+                app:floatingSearch_searchBarMarginTop="5dp"
+                app:floatingSearch_searchHint="手机号码搜索"
+                app:floatingSearch_showSearchKey="false"
+                app:floatingSearch_suggestionsListAnimDuration="250" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

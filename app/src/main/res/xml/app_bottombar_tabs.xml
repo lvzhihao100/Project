@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        icon="@mipmap/app_ico_mes"
+        id="@+id/tab_xiaoxi"
+        inActiveColor="555555"
+        activeColor="@color/library_main_color"
+        barColorWhenSelected="@color/common_white"
+        badgeBackgroundColor="#FF0000"
+        title="消息" />
+    <tab
+        icon="@mipmap/app_ico_com"
+        id="@+id/tab_tongxunlu"
+        inActiveColor="555555"
+        activeColor="@color/library_main_color"
+        barColorWhenSelected="@color/common_white"
+        badgeBackgroundColor="#FF0000"
+        title="通讯录" />
+    <tab
+        icon="@mipmap/app_white_add"
+        id="@+id/tab_function"
+        inActiveColor="555555"
+        activeColor="@color/library_main_color"
+        barColorWhenSelected="@color/common_white"
+        badgeBackgroundColor="#FF0000"
+        title="" />
+    <tab
+        icon="@mipmap/app_ico_mgt_app"
+        id="@+id/tab_faxian"
+        inActiveColor="555555"
+        activeColor="@color/library_main_color"
+        barColorWhenSelected="@color/common_white"
+        badgeBackgroundColor="#FF0000"
+        title="发现" />
+    <tab
+        icon="@mipmap/app_ico_me"
+        id="@+id/tab_my"
+        inActiveColor="555555"
+        activeColor="@color/library_main_color"
+        barColorWhenSelected="@color/common_white"
+        badgeBackgroundColor="#FF0000"
+        title="我的" />
+</tabs>

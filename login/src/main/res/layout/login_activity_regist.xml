@@ -1,0 +1,156 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.eqdd.yiqidian.ui.RegistActivity">
+
+    <data class=".RegistActivityCustom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_ColorPrimary"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_title"
+            layout="@layout/library_activity_title" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="@color/common_white"
+            android:padding="10.0dip">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:background="#ffe9e9e9" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:padding="10.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@mipmap/login_shoujihao" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:background="#ffe9e9e9" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:maxLength="11"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="5.0dip"
+                android:background="#ffe9e9e9" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:padding="10.0dip">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@mipmap/login_yaoshi" />
+
+                <View
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2.0dip"
+                    android:background="#ffe9e9e9" />
+
+                <EditText
+                    android:id="@+id/et_yanzheng"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:hint="请输入验证码"
+                    android:maxLength="6"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:id="@+id/tv_yanzheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/library_main_color"
+                    android:padding="5.0dip"
+                    android:onClick="onClick"
+                    android:text="获取验证码"
+                    android:textColor="@color/common_white"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shows"
+                android:layout_width="fill_parent"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#ffe9e9e9"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:onClick="onClick"
+                android:id="@+id/tv_regeist"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30.0dip"
+                android:background="@drawable/library_select_btn_blue"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10.0dip"
+                android:text="*企业用户注册，需要提供《执照》、《经营资质证明》及法人的《身份证信息》（手持身份证拍照上传），提交给易企点平台，由易企点平台的后台客服人员审核，审核真假之权限在易企点平台。"
+                android:textColor="#ffaaaaaa" />
+
+            <TextView
+                android:id="@+id/regeist_qiye"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/library_select_btn_blue"
+                android:gravity="center"
+                android:text="企业注册"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

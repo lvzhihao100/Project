@@ -1,0 +1,47 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.eqdd.yiqidian.ui.GuideActivity">
+
+    <data class=".GuideActivityCustom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_ColorPrimary"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/stv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:background="@color/hint_color"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="开始体验"
+                android:textSize="@{30}"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:corner="5dp"
+                app:layout_height="@{60}" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,61 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.select.SelectActivity">
+
+    <data class=".SelectActivityCustom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_ColorPrimary"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_title"
+            layout="@layout/library_activity_title" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_white">
+
+            <LinearLayout
+                android:id="@+id/ll_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/inlude_tongshi"
+                        layout="@layout/library_list_item_7" />
+
+                    <include
+                        android:id="@+id/inlude_haoyou"
+                        layout="@layout/library_list_item_7" />
+
+                    <include
+                        android:id="@+id/inlude_qunchengyuan"
+                        layout="@layout/library_list_item_7" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="multipleChoice"></android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,91 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class=".ActivityTitleCustom">
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_ColorPrimary"
+        android:elevation="2dp"
+        android:translationZ="2dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_height="@{88}">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="8dp"
+                android:src="@mipmap/library_back"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:text="标题"
+                android:textColor="@color/common_white"
+                android:textSize="@{25}" />
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="人事异动"
+                android:textColor="@color/common_white"
+                android:textSize="@{25}"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"
+                app:layout_height="@{40}"
+                app:layout_width="@{40}" />
+
+            <ImageView
+                android:id="@+id/ib_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingLeft="8dp"
+                android:paddingRight="20dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ib_add_two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ib_add"
+                android:background="@null"
+                android:paddingLeft="20dp"
+                android:paddingRight="8dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

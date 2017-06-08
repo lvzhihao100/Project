@@ -1,0 +1,92 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class=".ListItem9Custom">
+
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="1dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="10dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@{30}"
+            android:paddingRight="@{30}"
+            app:layout_height="@{80}">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@{20}"
+                app:layout_height="@{40}"
+                app:layout_width="@{40}" />
+
+            <Button
+                android:id="@+id/bt_right"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/library_shape_oval_green_10"
+                android:gravity="center"
+                android:textColor="@color/common_white"
+                android:textSize="@{30}"
+                app:layout_height="@{28}"
+                app:layout_width="@{80}" />
+
+            <Button
+                android:id="@+id/bt_left"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="@{10}"
+                android:layout_toLeftOf="@id/bt_right"
+                android:background="@drawable/library_shape_oval_green_10"
+                android:gravity="center"
+                android:textColor="@color/common_white"
+                android:textSize="@{30}"
+                app:layout_height="@{28}"
+                app:layout_width="@{80}" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/bt_left"
+                android:layout_toRightOf="@id/iv_head"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_upper_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="upper content"
+                    android:gravity="center_vertical|left"
+                    android:textSize="@{28}" />
+
+                <TextView
+                    android:id="@+id/tv_down_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="down content"
+                    android:gravity="center_vertical|left"
+                    android:textSize="@{24}" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

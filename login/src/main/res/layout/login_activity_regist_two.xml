@@ -1,0 +1,142 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.eqdd.yiqidian.ui.RegistTwo">
+
+    <data class=".RegistTwoCustom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_ColorPrimary"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_title"
+            layout="@layout/library_activity_title" />
+        <LinearLayout
+            android:id="@+id/ll_quanbu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffe9e9e9"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffe9e9e9"
+                android:orientation="vertical"
+                android:padding="5.0dip" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10.0dip"
+                    android:background="#ffe9e9e9" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5.0dip"
+                    android:background="#ffe9e9e9" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="密码" />
+
+                    <View
+                        android:layout_width="1.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="#ffe9e9e9" />
+
+                    <EditText
+                        android:id="@+id/et_reg_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@null"
+                        android:hint="请输入密码"
+                        android:maxLength="18"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/library_red"
+                    android:singleLine="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="*密码长度8～18位，数字、字母、符号均可"/>
+
+                <Button
+                    android:id="@+id/btn_regeist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:onClick="onClick"
+                    android:layout_marginTop="30.0dip"
+                    android:background="@drawable/library_select_btn_blue"
+                    android:text="注册"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="注册表示你同意"
+                        android:textColor="#ff4c4c4c"
+                        android:textSize="12.0dip" />
+
+                    <TextView
+                        android:id="@+id/fuwuxieyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="易企点服务使用协议"
+                        android:textColor="#ff0195ff"
+                        android:textSize="12.0dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="和"
+                        android:textColor="#ff4c4c4c"
+                        android:textSize="12.0dip" />
+
+                    <TextView
+                        android:id="@+id/yinsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="隐私条款"
+                        android:textColor="#ff0195ff"
+                        android:textSize="12.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
